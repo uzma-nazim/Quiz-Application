@@ -153,7 +153,7 @@ let nextQues = () => {
   if (coounter === 4) {
     valdation(coounter)
 
-    // location.href = "last.html";
+    
 
     nextbtn.setAttribute("data-toggle", "modal")
     nextbtn.setAttribute("data-target", "#resultModal")
@@ -173,7 +173,8 @@ let nextQues = () => {
     score.innerHTML = scorecount
     percent.innerHTML = `${calpercent}%`
 
-    console.log(score)
+    let clear = clearInterval(interval)
+
 
 
   }
